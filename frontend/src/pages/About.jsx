@@ -8,7 +8,7 @@ const About = () => {
      <Helmet>
         <title>About - Temple Donation</title>
       </Helmet>
-    <div className="about-sec  min-h-screen flex items-center justify-center bg-cover bg-center ">
+    <div className="about-sec  min-h-screen flex items-center  pt-16 justify-center bg-cover bg-center ">
         <div className=" mx-auto p-20  overflow-auto">
             <h1 className="text-2xl text-white font-extrabold underline mb-5 ">Temple Donation </h1>
             <div >
