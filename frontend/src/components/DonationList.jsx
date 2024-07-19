@@ -12,7 +12,7 @@ const DonationList = () => {
   useEffect(() => {
     const fetchDonations = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/donations/all-donations');
+        const response = await axios.get('https://templedonation.onrender.com/donations/all-donations');
         setDonations(response.data);
         setLoading(false);
       } catch (error) {

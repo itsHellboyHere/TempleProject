@@ -18,7 +18,7 @@ const DonationForm = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/donations/create-order', {
+      const response = await axios.post('https://templedonation.onrender.com/donations/create-order', {
         amount: amount,
         currency: 'INR' // Assuming currency is INR for temple donations
       });
@@ -55,7 +55,7 @@ const DonationForm = () => {
 
   const verifyPayment = async (razorpay_order_id, razorpay_payment_id) => {
     try {
-      const response = await axios.post('http://localhost:5000/donations/verify-payment', {
+      const response = await axios.post('https://templedonation.onrender.com/donations/verify-payment', {
         razorpay_order_id: razorpay_order_id,
         razorpay_payment_id: razorpay_payment_id,
         name: name,
