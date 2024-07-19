@@ -8,7 +8,7 @@ import homeImg4 from '../assets/homeimg4.jpeg';
 import { FaHandsPraying } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import LazyLoad from 'react-lazyload';
+// import LazyLoad from 'react-lazyload';
 
 const slideImages = [
    
@@ -24,7 +24,7 @@ const HomeComp = () => {
         <title>Home - Temple Donation</title>
       </Helmet>
       <Slide
-        duration={3000}
+        duration={5000}
         transitionDuration={400}
         infinite={true}
         indicators={true}
@@ -32,11 +32,11 @@ const HomeComp = () => {
       >
         {slideImages.map((slideImage, index) => (
           <div key={index} className="each-slide">
-             <LazyLoad
+             {/* <LazyLoad
               height={400} // Adjust based on your design
               offset={100} // Trigger load before the element is in view
               placeholder={<div className="bg-slate-400" />} // Optional placeholder
-            >
+            > */}
             <div
               style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${slideImage})`
@@ -74,7 +74,7 @@ const HomeComp = () => {
 
               </div>
             </div>
-            </LazyLoad>
+            {/* </LazyLoad> */}
           </div>
         ))}
       </Slide>
