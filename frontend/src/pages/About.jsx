@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async"
 import Footer from "../components/Footer"
+import Location from "../components/Location"
 
 
 const About = () => {
@@ -27,6 +28,7 @@ const About = () => {
             </div>
         </div>
     </div>
+    <Location/>
     <Footer/>
     </>
   )
