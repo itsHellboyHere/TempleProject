@@ -27,7 +27,7 @@ const Layout = () => {
     <>
       <Navbar />
       {isPageLoading ? <Loading /> : <Outlet />}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
