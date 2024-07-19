@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the frontend
-RUN npm run build --prefix frontend
+RUN npm run build
 
 # Use a lighter version of Node.js for the final image
 FROM node:18-alpine
@@ -41,4 +41,4 @@ COPY .env ./
 EXPOSE 5000
 
 # Command to run the app
-CMD ["node", "backend/server.js"]
+CMD ["npm", "start"]
